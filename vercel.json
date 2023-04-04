@@ -1,0 +1,11 @@
+{
+    "buildCommand": "yarn preview",
+    "installCommand": "yarn",
+    "outputDirectory": "build",
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/index.html"
+        }
+    ]
+}
