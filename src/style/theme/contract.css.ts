@@ -11,7 +11,7 @@ import {
 import { nullColors } from "../tokens/colors"
 
 export const BASE = {
-  radii,
+  borderRadius: radii,
   shadows,
   space,
   letterSpacings,
