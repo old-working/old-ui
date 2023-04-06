@@ -53,7 +53,7 @@ const colorSprinklesProperties = defineProperties({
     light: { selector: themeSelector.light },
     dark: { selector: themeSelector.dark },
   },
-  defaultCondition: `light`,
+  defaultCondition: [`light`, `dark`],
   properties: colorProperties,
   shorthands: colorShorthandProperties,
 })
