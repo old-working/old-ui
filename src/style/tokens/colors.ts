@@ -63,6 +63,7 @@ export const nullColors = {
   background: ``,
   backgroundSecondary: ``,
 
+  primary: ``,
   buttonSecondary: ``,
   buttonSecondaryHover: ``,
   buttonTertiaryHover: ``,
@@ -88,7 +89,7 @@ export const nullColors = {
 export const lightThemeColors = {
   background: colorPalette.white,
   backgroundSecondary: colorPalette.grey10,
-
+  primary: colorPalette.blue400,
   buttonSecondary: colorPalette.yellow50,
   buttonSecondaryHover: colorPalette.yellow100,
   buttonTertiaryHover: colorPalette.yellow100,
@@ -114,6 +115,7 @@ export const lightThemeColors = {
 export const darkThemeColors = {
   background: colorPalette.blue600,
   backgroundSecondary: colorPalette.blue500,
+  primary: colorPalette.yellow50,
 
   buttonSecondary: colorPalette.blue300,
   buttonSecondaryHover: colorPalette.blue400,

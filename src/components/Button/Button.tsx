@@ -1,8 +1,8 @@
 import React from "react"
-import { pinkButton } from "./button.css"
+import { primaryButton } from "./button.css"
 
 export const Button = () => (
-  <button type="button" className={`${pinkButton}`}>
-    Sono rosa
+  <button type="button" className={`${primaryButton}`}>
+    Button
   </button>
 )

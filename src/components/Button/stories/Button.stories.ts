@@ -15,9 +15,7 @@ export default meta
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 type Story = StoryObj<typeof meta>
 export const Primary: Story = {
-  args: {
-    primary: true,
-    label: `Button`,
-  },
+  args: {},
 }
+
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
