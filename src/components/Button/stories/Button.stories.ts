@@ -5,7 +5,7 @@ import { Button } from "../Button"
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
   // eslint-disable-next-line @typescript-eslint/quotes
-  title: "Example/Button",
+  title: "Components/Button",
   component: Button,
   argTypes: {
     size: {
