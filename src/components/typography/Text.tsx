@@ -7,7 +7,7 @@ import {
   colorTextPrimary,
   textDecorationUnderline,
   textTransformUppercase,
-} from "./Text.css"
+} from "./text.css"
 import { getFullyResponsiveValue } from "../../style/utils/getFullyResponse"
 import { forwardRef, HTMLProps } from "../../core"
 import { Box } from "../layout"
@@ -79,12 +79,10 @@ export const Text = forwardRef<TextProps, "div">(
           textTransforms.includes(`uppercase`) && textTransformUppercase
         )}
         ref={ref}
-        atoms={{
-          ...atoms,
-          fontWeight,
-          ...sprinklesProp,
-        }}
+        {...atoms}
         {...rest}
+        {...sprinklesProp}
+        fontWeight={fontWeight}
       />
     )
   }

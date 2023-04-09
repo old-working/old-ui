@@ -5,7 +5,7 @@ import { forwardRef } from "../../core"
 
 export interface HeadingProps
   extends Omit<TextProps, "variant" | "textTransforms"> {
-  variant: "2" | "3" | "4" | "5" | "6" | "7"
+  variant: "2xl" | "3xl" | "4xl" | "5xl" | "6xl" | "7xl"
 }
 
 const VARIANTS = {
@@ -19,6 +19,6 @@ const VARIANTS = {
 
 export const Heading = forwardRef<HeadingProps, "div">(
   ({ variant, ...rest }, ref) => (
-    <Text ref={ref} variant={VARIANTS[`${variant}xl`]} {...rest} />
+    <Text ref={ref} variant={VARIANTS[variant]} {...rest} />
   )
 )
