@@ -64,8 +64,10 @@ export const nullColors = {
   backgroundSecondary: ``,
 
   primary: ``,
+  buttonPrimaryHover: ``,
   buttonSecondary: ``,
   buttonSecondaryHover: ``,
+  buttonTertiary: ``,
   buttonTertiaryHover: ``,
   buttonDisabled: ``,
 
@@ -89,10 +91,12 @@ export const nullColors = {
 export const lightThemeColors = {
   background: colorPalette.white,
   backgroundSecondary: colorPalette.grey10,
-  primary: colorPalette.blue400,
-  buttonSecondary: colorPalette.yellow50,
-  buttonSecondaryHover: colorPalette.yellow100,
-  buttonTertiaryHover: colorPalette.yellow100,
+  primary: colorPalette.blue500,
+  buttonPrimaryHover: colorPalette.blue300,
+  buttonSecondary: colorPalette.yellow20,
+  buttonSecondaryHover: colorPalette.yellow10,
+  buttonTertiary: colorPalette.green10,
+  buttonTertiaryHover: colorPalette.green50,
   buttonDisabled: colorPalette.grey10,
 
   modalBackground: colorPalette.white,
@@ -116,10 +120,11 @@ export const darkThemeColors = {
   background: colorPalette.blue600,
   backgroundSecondary: colorPalette.blue500,
   primary: colorPalette.yellow50,
-
+  buttonPrimaryHover: colorPalette.yellow100,
   buttonSecondary: colorPalette.blue300,
   buttonSecondaryHover: colorPalette.blue400,
-  buttonTertiaryHover: colorPalette.blue200,
+  buttonTertiary: colorPalette.green300,
+  buttonTertiaryHover: colorPalette.green400,
   buttonDisabled: colorPalette.blue500,
 
   modalBackground: colorPalette.blue600,
