@@ -1,12 +1,21 @@
 import React from "react"
 import { button, ButtonVariants } from "./button.css"
+import { Box, BoxProps } from "../layout"
 
-export const Button: React.FC<ButtonVariants> = (props) => {
-  const { color, size } = props || {}
-  const buttonClass = button({ color, size })
+export const Button: React.FC<
+  ButtonVariants & BoxProps & { isFullWidth?: true }
+> = ({ variant, size, isFullWidth, children, ...rest }) => {
+  const buttonClass = button({ variant, size })
   return (
-    <button type="button" className={`${buttonClass}`}>
-      Button
-    </button>
+    <Box
+      as="button"
+      type="button"
+      disabled={variant === `disabled`}
+      width={isFullWidth ? `full` : undefined}
+      {...rest}
+      className={`${buttonClass}`}
+    >
+      {children}
+    </Box>
   )
 }
