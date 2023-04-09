@@ -53,7 +53,7 @@ export type ComponentWithAs<Component extends As, Props extends object = {}> = {
 }
 
 export type SprinklesProp = {
-  Sprinkles?: Sprinkles & OverrideTokens<Sprinkles>
+  sprinkles?: Sprinkles & OverrideTokens<Sprinkles>
 }
 
 export type OverrideTokens<T> = {

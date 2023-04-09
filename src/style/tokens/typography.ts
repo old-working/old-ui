@@ -11,17 +11,17 @@ export const letterSpacings = {
 export type LetterSpacing = keyof typeof letterSpacings
 
 export const lineHeights = {
-  16: `16px`,
-  18: `18px`,
+  15: `15px`,
+  17: `17px`,
   20: `20px`,
-  24: `24px`,
-  32: `32px`,
+  22: `22px`,
+  29: `29px`,
   40: `40px`,
-  56: `56px`,
-  64: `64px`,
-  72: `72px`,
+  59: `59px`,
+  68: `68px`,
+  78: `78px`,
   96: `96px`,
-  120: `132px`,
+  144: `144px`,
 }
 
 export type LineHeight = keyof typeof lineHeights
@@ -38,14 +38,14 @@ export const fontSizes = {
   56: `56px`,
   64: `64px`,
   96: `96px`,
-  144: `120px`,
+  120: `120px`,
 }
 
 export type FontSize = keyof typeof fontSizes
 
 export const fontWeights = {
   400: `400`,
-  600: `600`,
+  500: `500`,
   700: `700`,
 }
 

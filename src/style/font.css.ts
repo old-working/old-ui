@@ -3,20 +3,20 @@ import { globalFontFace, style } from "@vanilla-extract/css"
 const contentFont = `Montserrat`
 
 globalFontFace(contentFont, {
-  src: `url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400")`,
+  src: `url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap")`,
   fontWeight: 400,
   fontStyle: `regular`,
   fontDisplay: `swap`,
 })
 globalFontFace(contentFont, {
-  src: `url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600")`,
-  fontWeight: 400,
-  fontStyle: `semibold`,
+  src: `url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap")`,
+  fontWeight: 500,
+  fontStyle: `medium`,
   fontDisplay: `swap`,
 })
 globalFontFace(contentFont, {
-  src: `url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700")`,
-  fontWeight: 400,
+  src: `url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap")`,
+  fontWeight: 700,
   fontStyle: `bold`,
   fontDisplay: `swap`,
 })
