@@ -21,7 +21,7 @@ export const lineHeights = {
   64: `64px`,
   72: `72px`,
   96: `96px`,
-  120: `132px`,
+  144: `144px`,
 }
 
 export type LineHeight = keyof typeof lineHeights
@@ -38,7 +38,7 @@ export const fontSizes = {
   56: `56px`,
   64: `64px`,
   96: `96px`,
-  144: `120px`,
+  120: `120px`,
 }
 
 export type FontSize = keyof typeof fontSizes

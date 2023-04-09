@@ -5,7 +5,7 @@ export const unresponsiveProps = {
   position: [`absolute`, `fixed`, `relative`, `static`, `sticky`] as const,
   opacity: [0, 0.25, 0.5, 0.75, 1] as const,
   zIndex: zIndixes,
-  fontWeights: vars.fontWeights,
+  fontWeight: vars.fontWeights,
   border: [`none`],
   gap: vars.space,
   borderRadius: vars.borderRadius,
