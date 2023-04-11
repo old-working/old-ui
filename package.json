@@ -12,7 +12,8 @@
   "types": "src/index.ts",
   "exports": {
     ".": {
-      "import": "./src/index.ts"
+      "import": "./src/index.ts",
+      "require": "./src/index.ts"
     }
   },
   "files": [
