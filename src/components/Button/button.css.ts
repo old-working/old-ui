@@ -7,7 +7,7 @@ const base = style({
   borderRadius: vars.borderRadius[32],
   borderWidth: 1,
   borderStyle: `solid`,
-  fontWeight: vars.fontWeights[600],
+  fontWeight: vars.fontWeights[500],
   cursor: `pointer`,
   transition: `all 0.2s linear`,
   userSelect: `none`,
