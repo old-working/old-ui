@@ -64,6 +64,11 @@ export const nullColors = {
   backgroundSecondary: ``,
 
   primary: ``,
+  softPrimary: ``,
+  secondary: ``,
+  tertiary: ``,
+  warning: ``,
+  error: ``,
   buttonPrimaryHover: ``,
   buttonSecondary: ``,
   buttonSecondaryHover: ``,
@@ -76,6 +81,7 @@ export const nullColors = {
 
   textPrimary: ``,
   textSecondary: ``,
+  textLight: ``,
   textDisabled: ``,
 
   border: ``,
@@ -92,6 +98,11 @@ export const lightThemeColors = {
   background: colorPalette.white,
   backgroundSecondary: colorPalette.grey10,
   primary: colorPalette.blue500,
+  softPrimary: colorPalette.blue200,
+  secondary: colorPalette.yellow200,
+  tertiary: colorPalette.green200,
+  warning: colorPalette.orange200,
+  error: colorPalette.red200,
   buttonPrimaryHover: colorPalette.blue300,
   buttonSecondary: colorPalette.yellow20,
   buttonSecondaryHover: colorPalette.yellow10,
@@ -104,6 +115,7 @@ export const lightThemeColors = {
 
   textPrimary: colorPalette.black,
   textSecondary: colorPalette.grey300,
+  textLight: colorPalette.grey300,
   textDisabled: colorPalette.grey100,
 
   border: colorPalette.grey50,
@@ -120,6 +132,11 @@ export const darkThemeColors = {
   background: colorPalette.blue600,
   backgroundSecondary: colorPalette.blue500,
   primary: colorPalette.yellow50,
+  softPrimary: colorPalette.yellow100,
+  secondary: colorPalette.yellow100,
+  tertiary: colorPalette.green100,
+  warning: colorPalette.orange100,
+  error: colorPalette.red100,
   buttonPrimaryHover: colorPalette.yellow100,
   buttonSecondary: colorPalette.blue300,
   buttonSecondaryHover: colorPalette.blue400,
@@ -132,6 +149,7 @@ export const darkThemeColors = {
 
   textPrimary: colorPalette.white,
   textSecondary: colorPalette.grey200,
+  textLight: colorPalette.grey200,
   textDisabled: colorPalette.grey300,
 
   border: colorPalette.blue500,
