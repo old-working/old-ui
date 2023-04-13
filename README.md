@@ -1,8 +1,6 @@
 # old-ui
-Le PR si fanno tutte verso master, no robe di staging.
+A simple UI created in vanilla-extract-css
 
-## Chi spacca la UI viene gonfiato di botte
-
-## Not ready to be use in prod
+## Show components
 You can visit see on
-https://old-ui.vercel.app/?path=/story/example-button--primary
+https://old-ui.vercel.app/
