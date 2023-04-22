@@ -1,6 +1,5 @@
 import { createBox } from "@dessert-box/react"
 import { sprinkles, Sprinkles } from "../../../style/sprinkles.css"
-import { resetBox } from "./box.css"
 import { HTMLProps, OverrideTokens } from "../../../core"
 
 export interface BoxProps
@@ -10,5 +9,4 @@ export interface BoxProps
 
 export const Box = createBox({
   atoms: sprinkles,
-  defaultClassName: resetBox,
 })
