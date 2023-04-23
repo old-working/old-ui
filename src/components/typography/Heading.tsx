@@ -9,9 +9,9 @@ export interface HeadingProps
 }
 
 const VARIANTS = {
-  "7xl": `7xl`,
+  "7xl": [`3xl`, `3xl`, `4xl`, `5xl`, `7xl`, `7xl`],
   "6xl": `6xl`,
-  "5xl": `5xl`,
+  "5xl": [`2xl`, `2xl`, `3xl`, `4xl`, `5xl`, `5xl`],
   "4xl": [`2xl`, `2xl`, `3xl`, `3xl`, `4xl`, `4xl`],
   "3xl": [`xl`, `xl`, `2xl`, `2xl`, `3xl`, `3xl`],
   "2xl": [`lg`, `lg`, `xl`, `xl`, `2xl`, `2xl`],
