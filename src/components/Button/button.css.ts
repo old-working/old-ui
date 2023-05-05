@@ -84,7 +84,7 @@ const ghost = style({
   selectors: {
     "&:is(:hover, :focus, :active)": {
       background: vars.colors.buttonDisabled,
-      color: vars.colors.background,
+      color: vars.colors.textLight,
     },
   },
 })

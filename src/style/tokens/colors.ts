@@ -92,6 +92,7 @@ export const nullColors = {
   labelYellow: ``,
   labelOrange: ``,
   labelRed: ``,
+  labelGrey: ``,
 }
 
 export const lightThemeColors = {
@@ -126,6 +127,7 @@ export const lightThemeColors = {
   labelYellow: colorPalette.yellow10,
   labelOrange: colorPalette.orange10,
   labelRed: colorPalette.red10,
+  labelGrey: colorPalette.grey10,
 } satisfies typeof nullColors
 
 export const darkThemeColors = {
@@ -160,6 +162,7 @@ export const darkThemeColors = {
   labelYellow: colorPalette.yellow500,
   labelOrange: colorPalette.orange500,
   labelRed: colorPalette.red500,
+  labelGrey: colorPalette.grey500,
 } satisfies typeof nullColors
 
 export type Color = keyof typeof nullColors | keyof typeof colorPalette

@@ -5,7 +5,13 @@ import { Button } from "../Button"
 import { Box } from "../../layout"
 
 const ButtonsList = (
-  variant: "primary" | "secondary" | "tertiary" | "outline" | "disabled"
+  variant:
+    | "primary"
+    | "secondary"
+    | "tertiary"
+    | "outline"
+    | "disabled"
+    | "ghost"
 ) => (
   <Box display="flex" gap={12} alignItems="center" flexWrap={`wrap`}>
     {[`lg`, `md`, `sm`, `xs`].map((size) => (
@@ -59,6 +65,18 @@ export const Outline: Story = {
 
 export const Disabled: Story = {
   render: () => ButtonsList(`disabled`),
+}
+
+export const Ghost: Story = {
+  render: () => ButtonsList(`ghost`),
+}
+
+export const WithLeftIcon: Story = {
+  render: () => <Button leftIcon={<span>👈</span>}>Call to action</Button>,
+}
+
+export const WithRightIcon: Story = {
+  render: () => <Button rightIcon={<span>👉</span>}>Call to action</Button>,
 }
 
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
