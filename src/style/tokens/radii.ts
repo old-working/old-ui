@@ -6,6 +6,7 @@ export const radii = {
   16: `16px`,
   24: `24px`,
   32: `32px`,
+  9999: `9999px`,
 }
 
 export type Radii = keyof typeof radii

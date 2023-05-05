@@ -86,6 +86,7 @@ export const nullColors = {
 
   border: ``,
   hover: ``,
+  greyHover: ``,
 
   labelBlue: ``,
   labelGreen: ``,
@@ -121,6 +122,7 @@ export const lightThemeColors = {
 
   border: colorPalette.grey50,
   hover: colorPalette.grey20,
+  greyHover: colorPalette.grey100,
 
   labelBlue: colorPalette.blue10,
   labelGreen: colorPalette.green10,
@@ -156,6 +158,7 @@ export const darkThemeColors = {
 
   border: colorPalette.blue500,
   hover: colorPalette.blue400,
+  greyHover: colorPalette.blue300,
 
   labelBlue: colorPalette.blue500,
   labelGreen: colorPalette.green500,
