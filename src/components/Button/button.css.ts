@@ -76,6 +76,19 @@ const disabled = style({
   },
 })
 
+const ghost = style({
+  background: `transparent`,
+  borderColor: `transparent`,
+  color: vars.colors.textPrimary,
+  cursor: `pointer`,
+  selectors: {
+    "&:is(:hover, :focus, :active)": {
+      background: vars.colors.buttonDisabled,
+      color: vars.colors.textLight,
+    },
+  },
+})
+
 const XsSize = sprinkles({
   maxHeight: 24,
   minWidth: 24,
@@ -117,6 +130,7 @@ export const button = recipe({
       tertiary,
       outline,
       disabled,
+      ghost,
     },
     size: {
       xs: XsSize,
