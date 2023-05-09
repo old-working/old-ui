@@ -29,9 +29,9 @@ export const Button: React.FC<
       gap={leftIcon || rightIcon ? 8 : undefined}
       className={`${buttonClass}`}
     >
-      {rightIcon && rightIcon}
-      {children}
       {leftIcon && leftIcon}
+      {children}
+      {rightIcon && rightIcon}
     </Box>
   )
 }
