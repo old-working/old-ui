@@ -2,6 +2,7 @@ import { createThemeContract } from "@vanilla-extract/css"
 import { shadows } from "../tokens/shadow"
 import { radii } from "../tokens/radii"
 import { space } from "../tokens/space"
+import { container } from "../tokens/container"
 import {
   letterSpacings,
   fontSizes,
@@ -18,6 +19,7 @@ export const BASE = {
   fontSizes,
   fontWeights,
   lineHeights,
+  container,
 }
 
 export const vars = createThemeContract({
