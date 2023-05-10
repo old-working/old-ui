@@ -7,7 +7,6 @@ export const baseContainerStyle = style({
   boxSizing: `border-box`,
   marginLeft: `auto`,
   marginRight: `auto`,
-  border: `1px solid red`,
 })
 
 const fullWidth = style({
