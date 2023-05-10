@@ -10,3 +10,5 @@ export const container = {
   "calc(100% - 24px)": `calc(100% - 24px)`,
   "calc(100% - 12px)": `calc(100% - 12px)`,
 }
+
+export type ContainerToken = keyof typeof container
