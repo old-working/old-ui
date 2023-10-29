@@ -42,14 +42,12 @@ export const CHIP_SIZE = {
   small: {
     maxHeight: 16,
     px: 12,
-    py: 4,
     minHeight: 16,
     minWidth: 16,
   },
   medium: {
     maxHeight: 24,
     px: 12,
-    py: 8,
     minHeight: 24,
     minWidth: 24,
   },

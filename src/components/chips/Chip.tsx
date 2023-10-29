@@ -38,10 +38,6 @@ export const Chip = forwardRef<ChipProps, "div">(
               ...acc.px,
               [breakpoint]: CHIP_SIZE[rule].px,
             },
-            py: {
-              ...acc.py,
-              [breakpoint]: CHIP_SIZE[rule].py,
-            },
             maxHeight: {
               ...acc.maxHeight,
               [breakpoint]: CHIP_SIZE[rule].maxHeight,
