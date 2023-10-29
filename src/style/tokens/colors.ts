@@ -1,5 +1,5 @@
 export const test = {}
-const colorPalette = {
+export const colorPalette = {
   white: `#ffffff`,
   black: `#000000`,
   grey700: `#131312`,
@@ -57,11 +57,24 @@ const colorPalette = {
   yellow50: `#ffe67d`,
   yellow20: `#fff0a6`,
   yellow10: `#fff9ce`,
+  purple700: `#002032`,
+  purple600: `#49415C`,
+  purple500: `#5C2370`,
+  purple400: `#7951BC`,
+  purple300: `#AE64DF`,
+  purple200: `#A989DB`,
+  purple100: `#CDB8ED`,
+  purple50: `#DCC6FD`,
+  purple20: `#E7D7FF`,
+  purple10: `#F1EBFF`,
 }
 
 export const nullColors = {
+  ...colorPalette,
   background: ``,
   backgroundSecondary: ``,
+  purpleBackground: ``,
+  orangeBackground: ``,
 
   primary: ``,
   softPrimary: ``,
@@ -69,6 +82,7 @@ export const nullColors = {
   tertiary: ``,
   warning: ``,
   error: ``,
+
   buttonPrimaryHover: ``,
   buttonSecondary: ``,
   buttonSecondaryHover: ``,
@@ -94,11 +108,15 @@ export const nullColors = {
   labelOrange: ``,
   labelRed: ``,
   labelGrey: ``,
+  labelPurple: ``,
 }
 
 export const lightThemeColors = {
+  ...colorPalette,
   background: colorPalette.white,
   backgroundSecondary: colorPalette.grey10,
+  purpleBackground: colorPalette.purple10,
+  orangeBackground: colorPalette.orange10,
   primary: colorPalette.blue500,
   softPrimary: colorPalette.blue200,
   secondary: colorPalette.yellow200,
@@ -130,11 +148,15 @@ export const lightThemeColors = {
   labelOrange: colorPalette.orange10,
   labelRed: colorPalette.red10,
   labelGrey: colorPalette.grey10,
+  labelPurple: colorPalette.purple10,
 } satisfies typeof nullColors
 
 export const darkThemeColors = {
+  ...colorPalette,
   background: colorPalette.blue600,
   backgroundSecondary: colorPalette.blue500,
+  purpleBackground: colorPalette.purple600,
+  orangeBackground: colorPalette.orange600,
   primary: colorPalette.yellow50,
   softPrimary: colorPalette.yellow100,
   secondary: colorPalette.yellow100,
@@ -162,10 +184,11 @@ export const darkThemeColors = {
 
   labelBlue: colorPalette.blue500,
   labelGreen: colorPalette.green500,
-  labelYellow: colorPalette.yellow500,
-  labelOrange: colorPalette.orange500,
+  labelYellow: colorPalette.yellow400,
+  labelOrange: colorPalette.orange400,
   labelRed: colorPalette.red500,
-  labelGrey: colorPalette.grey500,
+  labelGrey: colorPalette.grey600,
+  labelPurple: colorPalette.purple500,
 } satisfies typeof nullColors
 
 export type Color = keyof typeof nullColors | keyof typeof colorPalette
