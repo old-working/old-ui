@@ -6,11 +6,14 @@
     "type": "git",
     "url": "git+https://github.com/old-working/old-ui"
   },
-  "sideEffects": false,
+  "sideEffects": [
+    "./src/styles/reset.css.ts"
+  ],
   "main": "src/index.ts",
   "module": "src/index.ts",
   "types": "src/index.ts",
   "exports": {
+    "./src/styles/reset.css": "./src/styles/reset.css.ts",
     ".": {
       "import": "./src/index.ts",
       "require": "./src/index.ts"

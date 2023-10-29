@@ -1,4 +1,5 @@
 import { vars } from "./theme/contract.css"
+import { overflows } from "./tokens/overflows"
 import { zIndixes } from "./tokens/zIndexes"
 
 export const unresponsiveProps = {
@@ -29,6 +30,9 @@ export const responsiveProps = {
   paddingTop: vars.space,
   flexDirection: [`row`, `column`, `row-reverse`, `column-reverse`] as const,
   flexWrap: [`nowrap`, `wrap`, `wrap-reverse`] as const,
+  overflow: overflows,
+  overflowX: overflows,
+  overflowY: overflows,
   alignItems: [
     `flex-start`,
     `flex-end`,

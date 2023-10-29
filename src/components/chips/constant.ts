@@ -8,28 +8,33 @@ export const CHIP_VARIANTS = {
   },
   blue: {
     background: vars.colors.labelBlue,
-    borderColor: vars.colors.primary,
-    color: vars.colors.primary,
+    borderColor: `transparent`,
+    color: vars.colors.blue200,
   },
   yellow: {
     background: vars.colors.labelYellow,
-    borderColor: vars.colors.secondary,
-    color: vars.colors.secondary,
+    borderColor: `transparent`,
+    color: vars.colors.yellow300,
   },
   green: {
     background: vars.colors.labelGreen,
-    borderColor: vars.colors.tertiary,
-    color: vars.colors.tertiary,
+    borderColor: `transparent`,
+    color: vars.colors.green200,
   },
   orange: {
     background: vars.colors.labelOrange,
-    borderColor: vars.colors.warning,
-    color: vars.colors.warning,
+    borderColor: `transparent`,
+    color: vars.colors.orange200,
   },
   red: {
     background: vars.colors.labelRed,
-    borderColor: vars.colors.error,
-    color: vars.colors.error,
+    borderColor: `transparent`,
+    color: vars.colors.red200,
+  },
+  purple: {
+    background: vars.colors.labelPurple,
+    borderColor: `transparent`,
+    color: vars.colors.purple200,
   },
 }
 
@@ -37,14 +42,12 @@ export const CHIP_SIZE = {
   small: {
     maxHeight: 16,
     px: 12,
-    py: 4,
     minHeight: 16,
     minWidth: 16,
   },
   medium: {
     maxHeight: 24,
     px: 12,
-    py: 8,
     minHeight: 24,
     minWidth: 24,
   },
