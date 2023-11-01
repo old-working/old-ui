@@ -11,6 +11,7 @@ export const unresponsiveProps = {
   gap: vars.space,
   borderRadius: vars.borderRadius,
   textAlign: [`left`, `center`, `right`] as const,
+  boxShadow: vars.shadows,
 } as const
 
 export type UnresponsiveProp = keyof typeof unresponsiveProps
