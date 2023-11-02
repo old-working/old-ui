@@ -89,6 +89,19 @@ const ghost = style({
   },
 })
 
+const purple = style({
+  background: vars.colors.purple200,
+  borderColor: vars.colors.purple200,
+  color: `white`,
+  cursor: `pointer`,
+  selectors: {
+    "&:is(:hover, :focus, :active)": {
+      background: vars.colors.purple400,
+      borderColor: vars.colors.purple400,
+    },
+  },
+})
+
 const XsSize = sprinkles({
   maxHeight: 24,
   minWidth: 24,
@@ -131,6 +144,7 @@ export const button = recipe({
       outline,
       disabled,
       ghost,
+      purple,
     },
     size: {
       xs: XsSize,
