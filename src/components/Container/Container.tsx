@@ -31,8 +31,18 @@ type ResponsiveContainerVariants = ResponsiveValue<
 >
 
 const ResponsiveVariants = {
-  spaced: [`mobile`, `md`, `lg`, `xl`, `2xl`],
-  fullwidth: [`fullWidth`, `md`, `lg`, `xl`, `2xl`],
+  "2xl": [`2xl`, `lg`, `md`, `mobile`, `mobile`],
+  "2xl-full": [`2xl`, `lg`, `md`, `mobile`, `fullWidth`], // "2xl-full" is a custom variant
+  xl: [`xl`, `lg`, `md`, `mobile`, `mobile`],
+  "xl-full": [`xl`, `lg`, `md`, `mobile`, `fullWidth`],
+  lg: [`lg`, `lg`, `md`, `mobile`, `mobile`],
+  "lg-full": [`lg`, `lg`, `md`, `mobile`, `fullWidth`],
+  md: [`md`, `md`, `md`, `mobile`, `mobile`],
+  "md-full": [`md`, `md`, `md`, `mobile`, `fullWidth`],
+  sm: [`sm`, `sm`, `sm`, `mobile`, `mobile`],
+  "sm-full": [`sm`, `sm`, `sm`, `mobile`, `fullWidth`],
+  mobile: [`mobile`, `mobile`, `mobile`, `mobile`, `mobile`],
+  "mobile-full": [`mobile`, `mobile`, `mobile`, `mobile`, `fullWidth`],
 } satisfies Record<string, ResponsiveContainerVariants>
 
 type ResponsiveVariantsKeys = keyof typeof ResponsiveVariants
@@ -44,7 +54,7 @@ export type ResponsiveContainerProps = BoxProps & {
 export const ResponsiveContainer: React.FC<ResponsiveContainerProps> = ({
   children,
   className,
-  variant = `spaced`,
+  variant = `2xl`,
   ...rest
 }) => {
   const responsiveContainerObj = getFullyResponsiveValue(
