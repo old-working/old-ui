@@ -15,6 +15,12 @@ globalFontFace(contentFont, {
   fontDisplay: `swap`,
 })
 globalFontFace(contentFont, {
+  src: `url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap")`,
+  fontWeight: 700,
+  fontStyle: `bold`,
+  fontDisplay: `swap`,
+})
+globalFontFace(contentFont, {
   src: `url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap")`,
   fontWeight: 700,
   fontStyle: `bold`,

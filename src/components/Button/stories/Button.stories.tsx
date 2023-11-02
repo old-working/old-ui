@@ -12,6 +12,7 @@ const ButtonsList = (
     | "outline"
     | "disabled"
     | "ghost"
+    | "purple"
 ) => (
   <Box display="flex" gap={12} alignItems="center" flexWrap={`wrap`}>
     {[`lg`, `md`, `sm`, `xs`].map((size) => (
@@ -69,6 +70,9 @@ export const Disabled: Story = {
 
 export const Ghost: Story = {
   render: () => ButtonsList(`ghost`),
+}
+export const Purple: Story = {
+  render: () => ButtonsList(`purple`),
 }
 
 export const WithLeftIcon: Story = {

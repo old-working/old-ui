@@ -1,6 +1,7 @@
 import React from "react"
 import { button, ButtonVariants } from "./button.css"
 import { Box, BoxProps } from "../layout"
+import { Body } from "../typography"
 
 export const Button: React.FC<
   ButtonVariants &
@@ -30,7 +31,13 @@ export const Button: React.FC<
       className={`${buttonClass}`}
     >
       {leftIcon && leftIcon}
-      {children}
+      <Body
+        variant="md"
+        fontWeight={600}
+        sprinkles={{ __color: `inherit`, __fontSize: `inherit` }}
+      >
+        {children}
+      </Body>
       {rightIcon && rightIcon}
     </Box>
   )
