@@ -31,18 +31,18 @@ type ResponsiveContainerVariants = ResponsiveValue<
 >
 
 const ResponsiveVariants = {
-  "2xl": [`2xl`, `lg`, `md`, `mobile`, `mobile`],
-  "2xl-full": [`2xl`, `lg`, `md`, `mobile`, `fullWidth`], // "2xl-full" is a custom variant
-  xl: [`xl`, `lg`, `md`, `mobile`, `mobile`],
-  "xl-full": [`xl`, `lg`, `md`, `mobile`, `fullWidth`],
-  lg: [`lg`, `lg`, `md`, `mobile`, `mobile`],
-  "lg-full": [`lg`, `lg`, `md`, `mobile`, `fullWidth`],
-  md: [`md`, `md`, `md`, `mobile`, `mobile`],
-  "md-full": [`md`, `md`, `md`, `mobile`, `fullWidth`],
-  sm: [`sm`, `sm`, `sm`, `mobile`, `mobile`],
-  "sm-full": [`sm`, `sm`, `sm`, `mobile`, `fullWidth`],
-  mobile: [`mobile`, `mobile`, `mobile`, `mobile`, `mobile`],
-  "mobile-full": [`mobile`, `mobile`, `mobile`, `mobile`, `fullWidth`],
+  "2xl": [`mobile`, `md`, `lg`, `xl`, `2xl`],
+  "2xl-full": [`fullWidth`, `md`, `lg`, `xl`, `2xl`],
+  xl: [`mobile`, `md`, `lg`, `xl`],
+  "xl-full": [`fullWidth`, `md`, `lg`, `xl`],
+  lg: [`mobile`, `md`, `lg`],
+  "lg-full": [`fullWidth`, `md`, `lg`],
+  md: [`mobile`, `md`],
+  "md-full": [`fullWidth`, `md`],
+  sm: [`mobile`, `sm`],
+  "sm-full": [`fullWidth`, `sm`],
+  mobile: [`mobile`],
+  "mobile-full": [`fullWidth`, `mobile`],
 } satisfies Record<string, ResponsiveContainerVariants>
 
 type ResponsiveVariantsKeys = keyof typeof ResponsiveVariants
