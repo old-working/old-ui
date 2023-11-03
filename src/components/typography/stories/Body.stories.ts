@@ -52,3 +52,8 @@ export const BodyXl: Story = {
     variant: `xl`,
   },
 }
+export const BodyXXl: Story = {
+  args: {
+    variant: `xxl`,
+  },
+}
