@@ -5,10 +5,11 @@ import { forwardRef } from "../../core"
 
 export interface BodyProps
   extends Omit<TextProps, "variant" | "textTransforms"> {
-  variant: "xl" | "lg" | "md" | "sm" | "xs" | "xxs"
+  variant: "xxl" | "xl" | "lg" | "md" | "sm" | "xs" | "xxs"
 }
 
 const VARIANTS = {
+  xxl: [`xl`, `xl`, `xxl`, `xxl`, `xxl`, `xxl`],
   xl: [`lg`, `lg`, `lg`, `xl`, `xl`, `xl`],
   lg: `lg`,
   md: `md`,

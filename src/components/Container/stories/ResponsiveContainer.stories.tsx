@@ -21,14 +21,14 @@ type Story = StoryObj<typeof meta>
 
 export const FullWidthResponsiveContainer: Story = {
   args: {
-    variant: `fullwidth`,
+    variant: `2xl-full`,
     height: 128,
   },
 }
 
 export const SpacedResponsiveContainer: Story = {
   args: {
-    variant: `spaced`,
+    variant: `2xl`,
     height: 128,
   },
 }
