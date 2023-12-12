@@ -11,9 +11,9 @@ export interface BodyProps
 const VARIANTS = {
   xxl: [`xl`, `xl`, `xxl`, `xxl`, `xxl`, `xxl`],
   xl: [`lg`, `lg`, `lg`, `xl`, `xl`, `xl`],
-  lg: `lg`,
+  lg: [`xs`, `xs`, `sm`, `sm`, `lg`, `lg`],
   md: `md`,
-  sm: [`xs`, `xs`, `md`, `md`, `lg`, `lg`],
+  sm: [`xs`, `xs`, `sm`, `sm`, `sm`, `sm`],
   xs: `xs`,
   xxs: `xxs`,
 } satisfies Record<string, ResponsiveValue<TextVariant>>
