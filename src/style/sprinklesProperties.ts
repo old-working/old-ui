@@ -17,7 +17,14 @@ export const unresponsiveProps = {
 export type UnresponsiveProp = keyof typeof unresponsiveProps
 
 export const responsiveProps = {
-  display: [`block`, `inline`, `inline-block`, `flex`, `inline-flex`] as const,
+  display: [
+    `block`,
+    `inline`,
+    `inline-block`,
+    `flex`,
+    `inline-flex`,
+    `none`,
+  ] as const,
   fontSize: vars.fontSizes,
   lineHeight: vars.lineHeights,
   letterSpacing: vars.letterSpacings,

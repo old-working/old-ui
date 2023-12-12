@@ -32,11 +32,11 @@ type ResponsiveContainerVariants = ResponsiveValue<
 
 const ResponsiveVariants = {
   "2xl": [`mobile`, `md`, `lg`, `xl`, `2xl`],
-  "2xl-full": [`fullWidth`, `md`, `lg`, `xl`, `2xl`],
+  "2xl-full": [`fullWidth`, `fullWidth`, `lg`, `xl`, `2xl`],
   xl: [`mobile`, `md`, `lg`, `xl`],
-  "xl-full": [`fullWidth`, `md`, `lg`, `xl`],
+  "xl-full": [`fullWidth`, `fullWidth`, `lg`, `xl`],
   lg: [`mobile`, `md`, `lg`],
-  "lg-full": [`fullWidth`, `md`, `lg`],
+  "lg-full": [`fullWidth`, `fullWidth`, `lg`],
   md: [`mobile`, `md`],
   "md-full": [`fullWidth`, `md`],
   sm: [`mobile`, `sm`],
