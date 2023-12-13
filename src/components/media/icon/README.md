@@ -2,7 +2,7 @@
 
 ## Add new icons
 
-1. Copy SVG from [Figma]
+1. Copy SVG from [Figma](https://www.figma.com/file/FNWCZpeLoL0epLa4GSwGI7/H4L-Design?type=design&node-id=2643-917&mode=design&t=UOXtNh1vwFnr2zx7-0)
    1. Select the icon (make sure that the dimensions are 24x24), right click and select `Copy/Paste as > Copy as SVG`
 2. Minimize it with [SVGOMG](https://jakearchibald.github.io/svgomg/)
    1. Click on "Paste markup" and paste the SVG copied from Figma

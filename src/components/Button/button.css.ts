@@ -17,6 +17,7 @@ import {
 const base = style({
   borderRadius: vars.borderRadius[32],
   fontWeight: vars.fontWeights[500],
+  border: `none`,
   cursor: `pointer`,
   transition: `all 0.2s linear`,
   userSelect: `none`,
@@ -50,92 +51,6 @@ export const colorSchemeVariants = styleVariants(colorScheme, (value) => [
   base,
   value,
 ])
-
-// const primary = style({
-//   background: vars.colors.primary,
-//   color: vars.colors.background,
-//   borderColor: vars.colors.primary,
-//   cursor: `pointer`,
-//   selectors: {
-//     "&:is(:hover, :focus, :active)": {
-//       background: `${vars.colors.buttonPrimaryHover} !important`,
-//     },
-//   },
-// })
-
-// const secondary = style({
-//   background: vars.colors.buttonSecondary,
-//   borderColor: vars.colors.buttonSecondary,
-//   cursor: `pointer`,
-//   selectors: {
-//     "&:is(:hover, :focus, :active)": {
-//       background: `${vars.colors.buttonSecondaryHover} !important`,
-//     },
-//   },
-// })
-
-// const tertiary = style({
-//   background: vars.colors.buttonTertiary,
-//   borderColor: vars.colors.buttonTertiary,
-//   cursor: `pointer`,
-//   selectors: {
-//     "&:is(:hover, :focus, :active)": {
-//       background: `${vars.colors.buttonTertiaryHover} !important`,
-//     },
-//   },
-// })
-
-// const outline = style({
-//   background: vars.colors.background,
-//   borderColor: vars.colors.textPrimary,
-//   color: vars.colors.textSecondary,
-//   cursor: `pointer`,
-//   selectors: {
-//     "&:is(:hover, :focus, :active)": {
-//       background: `${vars.colors.textPrimary} !important`,
-//       color: vars.colors.background,
-//     },
-//   },
-// })
-
-// const disabled = style({
-//   background: vars.colors.buttonDisabled,
-//   borderColor: vars.colors.buttonDisabled,
-//   color: vars.colors.textDisabled,
-//   cursor: `not-allowed`,
-//   selectors: {
-//     "&:is(:hover, :focus, :active)": {
-//       background: vars.colors.buttonDisabled,
-//       borderColor: vars.colors.buttonDisabled,
-//     },
-//   },
-// })
-
-// const ghost = style({
-//   background: `transparent`,
-//   borderColor: `transparent`,
-//   color: vars.colors.textPrimary,
-//   cursor: `pointer`,
-//   selectors: {
-//     "&:is(:hover, :focus, :active)": {
-//       background: vars.colors.buttonDisabled,
-//       color: vars.colors.textLight,
-//     },
-//   },
-// })
-
-// const purpleLegacy = style({
-//   background: vars.colors.purple200,
-//   borderColor: vars.colors.purple200,
-//   color: `white`,
-//   cursor: `pointer`,
-//   selectors: {
-//     "&:is(:hover, :focus, :active)": {
-//       background: vars.colors.purple400,
-//       borderColor: vars.colors.purple400,
-//     },
-//   },
-// })
 
 const XsSize = sprinkles({
   maxHeight: 24,

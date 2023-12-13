@@ -3,6 +3,7 @@ import { Meta, StoryObj } from "@storybook/react"
 import { Button } from "../Button"
 import { Box } from "../../layout"
 import { ColorSchemeVariants } from "../button.css"
+import { Icon } from "../../media"
 
 const ButtonsList = (colorScheme: ColorSchemeVariants) => (
   <Box display="flex" gap={12} alignItems="center" flexWrap={`wrap`}>
@@ -92,11 +93,19 @@ export const Theme: Story = {
 }
 
 export const WithLeftIcon: Story = {
-  render: () => <Button leftIcon={<span>👈</span>}>Call to action</Button>,
+  render: () => (
+    <Button leftIcon={<Icon icon="arrowLeftOutline" size={16} />}>
+      Call to action
+    </Button>
+  ),
 }
 
 export const WithRightIcon: Story = {
-  render: () => <Button rightIcon={<span>👉</span>}>Call to action</Button>,
+  render: () => (
+    <Button rightIcon={<Icon icon="arrowRightOutline" size={16} />}>
+      Call to action
+    </Button>
+  ),
 }
 
 // More on args: https://storybook.js.org/docs/react/writing-stories/args

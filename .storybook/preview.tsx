@@ -3,10 +3,22 @@ import React from "react"
 import { ThemeProvider } from "../src/components/Provider/ThemeProvider"
 
 const parameters = {
+   backgrounds: {
+    default: "light",
+    values: [
+      {
+        name: "light",
+        value: "#fff",
+      },
+      {
+        name: "dark",
+        value: "#000",
+      },
+    ],
+  },
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
     matchers: {
-      color: /(background|color)$/i,
       date: /Date$/,
     },
   },
