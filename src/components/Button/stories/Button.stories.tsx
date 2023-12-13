@@ -1,30 +1,22 @@
 import React from "react"
 import { Meta, StoryObj } from "@storybook/react"
-
 import { Button } from "../Button"
 import { Box } from "../../layout"
+import { ColorSchemeVariants } from "../button.css"
 
-const ButtonsList = (
-  variant:
-    | "primary"
-    | "secondary"
-    | "tertiary"
-    | "outline"
-    | "disabled"
-    | "ghost"
-    | "purple"
-) => (
+const ButtonsList = (colorScheme: ColorSchemeVariants) => (
   <Box display="flex" gap={12} alignItems="center" flexWrap={`wrap`}>
     {[`lg`, `md`, `sm`, `xs`].map((size) => (
       <Button
         key={size}
-        variant={variant}
+        variant={`solid`}
+        colorScheme={colorScheme}
         size={size as `xs` | `sm` | `md` | `lg`}
       >
         Call to action
       </Button>
     ))}
-    <Button variant={variant} isFullWidth>
+    <Button variant={`solid`} colorScheme={colorScheme} isFullWidth>
       Grosso
     </Button>
   </Box>
@@ -39,7 +31,23 @@ const meta = {
     variant: {
       control: {
         type: `select`,
-        options: [`primary`, `secondary`],
+        options: [`solid`],
+      },
+    },
+    colorScheme: {
+      control: {
+        type: `select`,
+        options: [
+          `purple`,
+          `yellow`,
+          `blue`,
+          `green`,
+          `red`,
+          `orange`,
+          `theme`,
+          `disabled`,
+          `ghost`,
+        ],
       },
     },
   },
@@ -49,19 +57,27 @@ export default meta
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 type Story = StoryObj<typeof meta>
-export const Primary: Story = {
-  render: () => ButtonsList(`primary`),
+export const Purple: Story = {
+  render: () => ButtonsList(`purple`),
 }
 
-export const Secondary: Story = {
-  render: () => ButtonsList(`secondary`),
+export const Yellow: Story = {
+  render: () => ButtonsList(`yellow`),
 }
-export const Tertiary: Story = {
-  render: () => ButtonsList(`tertiary`),
+export const Blue: Story = {
+  render: () => ButtonsList(`blue`),
 }
 
-export const Outline: Story = {
-  render: () => ButtonsList(`outline`),
+export const Green: Story = {
+  render: () => ButtonsList(`green`),
+}
+
+export const Red: Story = {
+  render: () => ButtonsList(`red`),
+}
+
+export const Orange: Story = {
+  render: () => ButtonsList(`orange`),
 }
 
 export const Disabled: Story = {
@@ -71,8 +87,8 @@ export const Disabled: Story = {
 export const Ghost: Story = {
   render: () => ButtonsList(`ghost`),
 }
-export const Purple: Story = {
-  render: () => ButtonsList(`purple`),
+export const Theme: Story = {
+  render: () => ButtonsList(`theme`),
 }
 
 export const WithLeftIcon: Story = {

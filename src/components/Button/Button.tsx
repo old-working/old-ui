@@ -1,17 +1,25 @@
 import React from "react"
-import { button, ButtonVariants } from "./button.css"
+import clsx from "clsx"
+import {
+  button,
+  ButtonVariants,
+  colorSchemeVariants,
+  ColorSchemeVariants,
+} from "./button.css"
 import { Box, BoxProps } from "../layout"
 import { Body } from "../typography"
 
 export const Button: React.FC<
   ButtonVariants &
     BoxProps & {
+      colorScheme?: ColorSchemeVariants
       isFullWidth?: true
       leftIcon?: React.ReactNode
       rightIcon?: React.ReactNode
     }
 > = ({
   variant,
+  colorScheme = `purple`,
   size,
   isFullWidth,
   children,
@@ -20,15 +28,17 @@ export const Button: React.FC<
   ...rest
 }) => {
   const buttonClass = button({ variant, size })
+  const colorSchemeClass = colorSchemeVariants[colorScheme]
+
   return (
     <Box
       as="button"
       type="button"
-      disabled={variant === `disabled`}
+      disabled={colorScheme === `disabled`}
       width={isFullWidth ? `full` : undefined}
       {...rest}
       gap={leftIcon || rightIcon ? 8 : undefined}
-      className={`${buttonClass}`}
+      className={clsx(buttonClass, colorSchemeClass, rest.className)}
     >
       {leftIcon && leftIcon}
       <Body
