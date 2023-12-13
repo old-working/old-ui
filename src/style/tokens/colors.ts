@@ -22,7 +22,7 @@ export const colorPalette = {
   blue20: `#c5e1f9`,
   blue10: `#e0f3fe`,
   green600: `#002a17`,
-  green500: `#06d154`,
+  green500: `#005F33`,
   green400: `#10a451`,
   green300: `#3cc974`,
   green200: `#65E197`,
